@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics", "Grupo6.Logistics\Grupo6.Logistics.csproj", "{584E61CF-F09B-452A-93FE-BA3A0D72C8B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Conta", "Grupo6.Logistics\Grupo6.Logistics.Conta.csproj", "{584E61CF-F09B-452A-93FE-BA3A0D72C8B6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Grupo6.Logistcs.SharedClass", "Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.SharedClass.shproj", "{97D549C4-4711-444C-9D21-FDDA1D76202F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Customizations", "Grupo6.Logistics.Customizations\Grupo6.Logistics.Customizations.csproj", "{CF8131F7-5DAC-44D1-8240-FA656B8F1B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +19,19 @@ Global
 		{584E61CF-F09B-452A-93FE-BA3A0D72C8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584E61CF-F09B-452A-93FE-BA3A0D72C8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584E61CF-F09B-452A-93FE-BA3A0D72C8B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8131F7-5DAC-44D1-8240-FA656B8F1B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8131F7-5DAC-44D1-8240-FA656B8F1B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8131F7-5DAC-44D1-8240-FA656B8F1B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8131F7-5DAC-44D1-8240-FA656B8F1B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A49AF09-EFB4-4D97-8719-F2B522DEDADD}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{584e61cf-f09b-452a-93fe-ba3a0d72c8b6}*SharedItemsImports = 4
+		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{97d549c4-4711-444c-9d21-fdda1d76202f}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
