@@ -5,6 +5,8 @@ using Grupo6.Logistics.SharedClass.Arquitetura;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Tooling.Connector;
+using Newtonsoft.Json.Linq;
+using RestSharp;
 using System;
 
 using System.Collections.Generic;
@@ -24,21 +26,40 @@ namespace Grupo6.Logistics.Oportunidade
             try
             {
 
+
                 if (Context.MessageName.ToLower() == "create")
                 {
-                   
+                   Guid organizationId = Context.OrganizationId;
+
                     OppController oppController = new OppController(Service);
 
                     oppController.GetCod();
 
 
-                    ConexaoSegundario secundario = new ConexaoSegundario();
-                    OppController oppController2 = new OppController(secundario.GetService());
+                    RequestAPI obterToken = new RequestAPI(organizationId);
+                    obterToken.GetToken();
 
-                    oppController2.GetCod();
+                    OppController oppController2 = new OppController(Service);
+                    oppController2.CodOpp = obterToken.BuscarMaiorCodOppNaApi();
+                    
+
+
+
+
 
                     string[] codAmbiente1 = oppController.CodOpp.Split('-');
-                    string[] codAmbiente2 = oppController2.CodOpp.Split('_');
+                    string[] codAmbiente2;
+                    if (oppController2.CodOpp != null)
+                    {
+                        codAmbiente2 = oppController2.CodOpp.Split('-');
+                        oppController2.CodOpp = oppController2.CodOportunidade.AcrescerCod(int.Parse(codAmbiente2[1]));
+                        codAmbiente2 = oppController2.CodOpp.Split('-');
+                        
+                    }
+                    else
+                    {
+                        codAmbiente2 =  new string[] { "0", "0", "0" };
+                    }
 
                     if (int.Parse(codAmbiente1[1]) > int.Parse(codAmbiente2[1]))
                     {
@@ -46,6 +67,7 @@ namespace Grupo6.Logistics.Oportunidade
                     }
                     else
                     {
+
                         oppController2.InsereCod(Context);
                     }
 
