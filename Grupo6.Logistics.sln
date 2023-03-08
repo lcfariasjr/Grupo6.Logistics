@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Customizat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Oportunidade", "Grupo6.Logistics.Oportunidade\Grupo6.Logistics.Oportunidade.csproj", "{333ECBB4-8BA7-4B20-BF29-3B93D3C6A69B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Produto", "Grupo6.Logistics.Produto\Grupo6.Logistics.Produto.csproj", "{9AD5F361-6DBB-4A96-BA00-9A6931F0C198}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{333ECBB4-8BA7-4B20-BF29-3B93D3C6A69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333ECBB4-8BA7-4B20-BF29-3B93D3C6A69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333ECBB4-8BA7-4B20-BF29-3B93D3C6A69B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD5F361-6DBB-4A96-BA00-9A6931F0C198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD5F361-6DBB-4A96-BA00-9A6931F0C198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD5F361-6DBB-4A96-BA00-9A6931F0C198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD5F361-6DBB-4A96-BA00-9A6931F0C198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,5 +46,6 @@ Global
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{333ecbb4-8ba7-4b20-bf29-3b93d3c6a69b}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{584e61cf-f09b-452a-93fe-ba3a0d72c8b6}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{97d549c4-4711-444c-9d21-fdda1d76202f}*SharedItemsImports = 13
+		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{9ad5f361-6dbb-4a96-ba00-9a6931f0c198}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

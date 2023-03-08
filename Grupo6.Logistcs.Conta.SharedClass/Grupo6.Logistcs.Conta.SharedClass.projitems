@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Arquitetura\ActionCore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Arquitetura\ConexaoSegundario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Arquitetura\PluginConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Arquitetura\RequestAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Arquitetura\PluginCore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\ExtensionsRequestToken.cs" />
