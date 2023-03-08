@@ -33,8 +33,6 @@ LogisticsPrincipal.Conta = {
         }
 
         formContext.getAttribute("name").setValue(nomeConta);
-        return formatedName;
-
     }
 
 
