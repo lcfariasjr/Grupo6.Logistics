@@ -29,7 +29,7 @@ namespace Grupo6.Logistics.Oportunidade
 
                 if (Context.MessageName.ToLower() == "create")
                 {
-                   Guid organizationId = Context.OrganizationId;
+                    Guid organizationId = Context.OrganizationId;
 
                     OppController oppController = new OppController(Service);
 
@@ -41,10 +41,6 @@ namespace Grupo6.Logistics.Oportunidade
 
                     OppController oppController2 = new OppController(Service);
                     oppController2.CodOpp = obterToken.BuscarMaiorCodOppNaApi();
-                    
-
-
-
 
 
                     string[] codAmbiente1 = oppController.CodOpp.Split('-');
@@ -54,11 +50,11 @@ namespace Grupo6.Logistics.Oportunidade
                         codAmbiente2 = oppController2.CodOpp.Split('-');
                         oppController2.CodOpp = oppController2.CodOportunidade.AcrescerCod(int.Parse(codAmbiente2[1]));
                         codAmbiente2 = oppController2.CodOpp.Split('-');
-                        
+
                     }
                     else
                     {
-                        codAmbiente2 =  new string[] { "0", "0", "0" };
+                        codAmbiente2 = new string[] { "0", "0", "0" };
                     }
 
                     if (int.Parse(codAmbiente1[1]) > int.Parse(codAmbiente2[1]))
