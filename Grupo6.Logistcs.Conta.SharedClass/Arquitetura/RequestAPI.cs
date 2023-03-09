@@ -9,7 +9,7 @@ using System.Web;
 using System.IO;
 using Grupo6.Logistcs.Conta.SharedClass.Extensions;
 using System.Web.UI.WebControls;
-using RestSharp;
+
 
 namespace Grupo6.Logistcs.Conta.SharedClass.Arquitetura
 {

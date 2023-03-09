@@ -12,7 +12,7 @@ namespace Grupo6.Logistcs.Arquitetura
         {
             string connectionString =
                 "AuthType=OAuth;" +
-                "Username=ambiente2@tccgrupo6dynacoop.onmicrosoft.com;" +
+                "Username=jessica@tccgrupo6dynacoop.onmicrosoft.com;" +
                 "Password=Tcc@2023;" +
                 "Url=https://logisticssecundario.crm2.dynamics.com/;" +
                 "AppId=47d414b0-dc10-4025-98e4-2e63336ce1e9;" +
