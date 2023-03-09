@@ -6,6 +6,7 @@ LogisticsPrincipal.Conta = {
     OnCreateConta: function (executionContext) {
         var formContext = executionContext.getFormContext();
         var nomeConta = formContext.getAttribute("name").getValue().toLowerCase();
+        nomeConta = nomeConta.replace(/\s\s+/g, ' ');
         var formatedName = nomeConta.split(" ");
 
         if (nomeConta != null) {
