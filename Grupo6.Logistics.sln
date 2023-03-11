@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Contato", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.ContaCNPJ", "Grupo6.Logistics.ContaCNPJ\Grupo6.Logistics.ContaCNPJ.csproj", "{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Oportunidade2", "Grupo6.Logistics.Oportunidade2\Grupo6.Logistics.Oportunidade2.csproj", "{8BB42438-52CA-4C2D-BEEE-39E4602DBD68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB42438-52CA-4C2D-BEEE-39E4602DBD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB42438-52CA-4C2D-BEEE-39E4602DBD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB42438-52CA-4C2D-BEEE-39E4602DBD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB42438-52CA-4C2D-BEEE-39E4602DBD68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{584e61cf-f09b-452a-93fe-ba3a0d72c8b6}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{75d129dd-c725-4c96-8763-bd69cd9a6485}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{7c0a7104-ded9-4bf4-8d3a-e19b3ff62e29}*SharedItemsImports = 4
+		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{8bb42438-52ca-4c2d-beee-39e4602dbd68}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{97d549c4-4711-444c-9d21-fdda1d76202f}*SharedItemsImports = 13
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{9ad5f361-6dbb-4a96-ba00-9a6931f0c198}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{ac4cc8f6-bf75-496e-ade8-6885101c9be3}*SharedItemsImports = 4
