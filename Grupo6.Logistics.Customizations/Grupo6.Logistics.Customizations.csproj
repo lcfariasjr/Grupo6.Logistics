@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="JavaScript\Grupo.Logistics.MascaraNomeConta.js" />
     <Content Include="JavaScript\Grupo6.Logistics.Contato.ValidaCPF.js" />
     <Content Include="JavaScript\Grupo6.Logistics.Oportunidade.BloquearEdicao.js" />
     <Content Include="JavaScript\Grupo6.LogisticsPrincipal.BuscaCEP.js" />
