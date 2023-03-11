@@ -28,21 +28,24 @@ namespace Grupo6.Logistics.Produto.Repository
             Entity product = new Entity(this.logicalname);
             product["gp6_integracao"] = true;
 
+            //Campos obrigatórios
             product["name"] = productModel.Nome;
             product["productnumber"] = productModel.ProdutoId;
 
-            if(productModel.ValidoAPartir != null)
+            var id = RecuperaID("uomschedule", "name", "name", productModel.GrupoUnidade);
+            product["defaultuomscheduleid"] = new EntityReference("uomschedule", id);
+
+            var id2 = RecuperaID("uom", "name", "name", productModel.UnidadePadrao);
+            product["defaultuomid"] = new EntityReference("uom", id2);
+
+            product["quantitydecimal"] = productModel.SuporteDecimais;
+
+            //Campos não obrigatórios e validação caso nulo
+            if (productModel.ValidoAPartir != null)
                 product["validfromdate"] = productModel.ValidoAPartir.Value;
 
             if(productModel.ValidoAte != null)
                 product["validtodate"] = productModel.ValidoAte.Value;
-
-
-            var id = RecuperaID("uomschedule", "name", "name",productModel.GrupoUnidade);
-            product["defaultuomscheduleid"] = new EntityReference("uomschedule", id);
-            var id2 = RecuperaID("uom", "name", "name", productModel.UnidadePadrao);
-            product["defaultuomid"] = new EntityReference("uom", id2);
-            product["quantitydecimal"] = productModel.SuporteDecimais;
 
             if (productModel.CustoAtual != null)
                 product["currentcost"] = new Money(productModel.CustoAtual.Value);

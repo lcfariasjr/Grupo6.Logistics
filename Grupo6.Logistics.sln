@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Produto", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.ProdutoAmbiente2", "Grupo6.Logistics.ProdutoAmbiente2\Grupo6.Logistics.ProdutoAmbiente2.csproj", "{75D129DD-C725-4C96-8763-BD69CD9A6485}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.Contato", "Grupo6.Logistics.Contato\Grupo6.Logistics.Contato.csproj", "{7C0A7104-DED9-4BF4-8D3A-E19B3FF62E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo6.Logistics.ContaCNPJ", "Grupo6.Logistics.ContaCNPJ\Grupo6.Logistics.ContaCNPJ.csproj", "{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{75D129DD-C725-4C96-8763-BD69CD9A6485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75D129DD-C725-4C96-8763-BD69CD9A6485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75D129DD-C725-4C96-8763-BD69CD9A6485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C0A7104-DED9-4BF4-8D3A-E19B3FF62E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0A7104-DED9-4BF4-8D3A-E19B3FF62E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0A7104-DED9-4BF4-8D3A-E19B3FF62E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0A7104-DED9-4BF4-8D3A-E19B3FF62E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4CC8F6-BF75-496E-ADE8-6885101C9BE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,7 +64,9 @@ Global
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{333ecbb4-8ba7-4b20-bf29-3b93d3c6a69b}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{584e61cf-f09b-452a-93fe-ba3a0d72c8b6}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{75d129dd-c725-4c96-8763-bd69cd9a6485}*SharedItemsImports = 4
+		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{7c0a7104-ded9-4bf4-8d3a-e19b3ff62e29}*SharedItemsImports = 4
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{97d549c4-4711-444c-9d21-fdda1d76202f}*SharedItemsImports = 13
 		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{9ad5f361-6dbb-4a96-ba00-9a6931f0c198}*SharedItemsImports = 4
+		Grupo6.Logistcs.Conta.SharedClass\Grupo6.Logistcs.Conta.SharedClass.projitems*{ac4cc8f6-bf75-496e-ade8-6885101c9be3}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

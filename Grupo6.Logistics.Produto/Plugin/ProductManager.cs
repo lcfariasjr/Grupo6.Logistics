@@ -21,30 +21,30 @@ namespace Grupo6.Logistics.Produto.Plugin
             Context = serviceProvider.GetService(typeof(IPluginExecutionContext)) as IPluginExecutionContext;
             ServiceFactory = serviceProvider.GetService(typeof(IOrganizationServiceFactory)) as IOrganizationServiceFactory;
             Service = ServiceFactory.CreateOrganizationService(Context.UserId);
-
             ITracingService tracingService = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
+
             Entity product = (Entity)this.Context.InputParameters["Target"];
-            tracingService.Trace("antes da conexao");
+           
             IOrganizationService ambiente2 = PluginConnection.GetService();
-            tracingService.Trace("depois da conexao");
+           
             ProductModel productModel = new ProductModel();
 
-
             ProductRepository productRepository = new ProductRepository(ambiente2, tracingService, Service);
+
+            //Campos Obrigtórios
             productModel.Nome = product.GetAttributeValue<string>("name");
             productModel.ProdutoId = product.GetAttributeValue<string>("productnumber");
+            productModel.GrupoUnidade = product.GetAttributeValue<EntityReference>("defaultuomscheduleid").Id;
+            productModel.UnidadePadrao = product.GetAttributeValue<EntityReference>("defaultuomid").Id;
+            productModel.SuporteDecimais = product.GetAttributeValue<int>("quantitydecimal");
 
-            if(product.Contains("validfromdate") && product["validfromdate"] != null)
+            //Campos não obrigatórios, validação caso nulo
+
+            if (product.Contains("validfromdate") && product["validfromdate"] != null)
                 productModel.ValidoAPartir = product.GetAttributeValue<DateTime>("validfromdate");
 
             if(product.Contains("validtodate") && product["validtodate"] != null)
-            productModel.ValidoAte = product.GetAttributeValue<DateTime>("validtodate");
-
-            productModel.GrupoUnidade = product.GetAttributeValue<EntityReference>("defaultuomscheduleid").Id;
-            productModel.UnidadePadrao = product.GetAttributeValue<EntityReference>("defaultuomid").Id;
-            tracingService.Trace("antes que quantitydecimal");
-            productModel.SuporteDecimais = product.GetAttributeValue<int>("quantitydecimal");
-            tracingService.Trace("depois que quantitydecimal");
+                productModel.ValidoAte = product.GetAttributeValue<DateTime>("validtodate");           
 
             if (product.Contains("currentcost") && product["currentcost"] != null)
                 productModel.CustoAtual = product.GetAttributeValue<Money>("currentcost").Value;
